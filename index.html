@@ -80,19 +80,16 @@
   .foto{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
   .ph{aspect-ratio:1/1;border-radius:18px;border:2px dashed rgba(247,211,228,.55);background:rgba(200,85,138,.12);display:grid;place-items:center;text-align:center;padding:16px;color:var(--rosa-tenue);font-size:.92rem}
   .ph b{display:block;font-size:2rem;margin-bottom:6px}
-  .foto figure{border-radius:18px;overflow:hidden;background:#2a2628;position:relative}
-  .foto figure img{width:100%;aspect-ratio:1/1;object-fit:cover}
-  .foto figcaption{position:absolute;left:10px;bottom:10px;background:rgba(28,26,27,.78);color:#fff;font-size:.8rem;padding:.35em .7em;border-radius:999px}
   @media(max-width:780px){.foto{grid-template-columns:1fr 1fr}}
 
   /* noi */
   .noi .wrap{display:grid;grid-template-columns:.85fr 1.15fr;gap:48px;align-items:center}
-  .noi-img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:22px;box-shadow:0 24px 50px -24px rgba(0,0,0,.4)}
+  .noi .ph{aspect-ratio:4/5;border-color:var(--rosa);background:var(--rosa-chiaro);color:var(--rosa-scuro)}
   .noi p{color:var(--grigio);font-size:1.05rem;margin-bottom:1em}
   .punti{list-style:none;margin-top:18px}
   .punti li{padding:9px 0;border-bottom:1px dashed rgba(0,0,0,.15)}
   .punti li::before{content:"🐾 "}
-  @media(max-width:820px){.noi .wrap{grid-template-columns:1fr}.noi-img{max-width:340px;margin:0 auto}}
+  @media(max-width:820px){.noi .wrap{grid-template-columns:1fr}.noi .ph{max-width:340px;margin:0 auto;width:100%}}
 
   /* recensione */
   .rec{background:#fff;border-top:1px solid rgba(0,0,0,.06);border-bottom:1px solid rgba(0,0,0,.06)}
@@ -192,23 +189,23 @@
 
 <section class="galleria" id="foto">
   <div class="wrap">
-    <div class="eyebrow">Da Bautique</div>
+    <div class="eyebrow">Prima e dopo</div>
     <h2>I nostri clienti a quattro zampe</h2>
-    <p class="intro">Toelettature, novità e consigli: ogni giorno su Instagram e TikTok.</p>
+    <p class="intro">Le foto dei cani dopo la toelettatura. Le trovi ogni giorno anche su Instagram e TikTok.</p>
     <div class="foto">
-      <figure><img src="img/cane-barboncino.jpg" alt="Barboncino nero appena toelettato da Bautique" loading="lazy" width="361" height="361"><figcaption>Appena toelettato</figcaption></figure>
-      <figure><img src="img/bancone-prodotti.jpg" alt="In negozio con i tappetini refrigeranti per cani" loading="lazy" width="361" height="361"><figcaption>Le novità in negozio</figcaption></figure>
-      <figure><img src="img/scaffale-crocchette.jpg" alt="Scaffale di crocchette Natural Trainer" loading="lazy" width="360" height="360"><figcaption>Mangimi di qualità</figcaption></figure>
-      <figure><img src="img/vetrina-zampe.jpg" alt="La vetrina di Bautique con le zampette" loading="lazy" width="361" height="361"><figcaption>La nostra vetrina</figcaption></figure>
+      <div class="ph"><div><b>📸</b>Foto in arrivo:<br>un cane dopo la toelettatura</div></div>
       <div class="ph"><div><b>📸</b>Foto in arrivo:<br>prima e dopo</div></div>
       <div class="ph"><div><b>📸</b>Foto in arrivo:<br>un taglio di razza</div></div>
+      <div class="ph"><div><b>📸</b>Foto in arrivo:<br>il negozio dentro</div></div>
+      <div class="ph"><div><b>📸</b>Foto in arrivo:<br>gli accessori</div></div>
+      <div class="ph"><div><b>📸</b>Foto in arrivo:<br>un cliente felice</div></div>
     </div>
   </div>
 </section>
 
 <section class="noi">
   <div class="wrap">
-    <img class="noi-img" src="img/in-negozio.jpg" alt="In negozio da Bautique Laboratory" loading="lazy" width="361" height="451">
+    <div class="ph"><div><b>📸</b>Qui una vostra foto<br>in negozio</div></div>
     <div>
       <div class="eyebrow">Chi siamo</div>
       <h2>Con Bautique, il tuo cane è in buone mani</h2>
